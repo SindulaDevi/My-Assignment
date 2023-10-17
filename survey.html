@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>survey</title>
+        <link rel="stylesheet" href="survey.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title">
+                    Customer Survey Form
+                </h1>
+                <p id="description">
+                   <b>Thank you for taking time to help us to improve</b>
+                </p>
+            </header>
+            <form action="" id="survey-form">
+                <div class="form-group">
+                    <label for="fname"><b>First Name</b></label>
+                    <input type="text" name="fname" id="name" class="formControl" placeholder="Enter Your first name" required>
+                </div>
+                <div class="form-group">    
+                    <label for="lname"><b>Last Name</b></label>
+                    <input type="text" name="lname" id="name" class="formControl" placeholder="Enter Your last name" required>
+                </div>
+                <div class="form-group">    
+                    <label for="email"><b>Email Id</b></label>
+                    <input type="email" name="email" id="email" class="formControl" placeholder="Enter Your Email" required>
+                </div>
+                <div class="form-group">    
+                    <label for="phone"><b>Mobile Number</b></label>
+                    <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter Your phone number" required>
+                </div>
+                <div class="form-group">    
+                    Date Of Birth
+                    <input type="date" class="formControl" placeholder="Enter Your DOB" required>
+                </div>
+                <div class="form-group">
+                    <p id="quest"><b>Country</b></p>
+                    <select name="role" id="dropdown" class="formcontrol" required>
+                    <option value="" disabled selected> select your Country</option>
+                    <option value="America">America</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Canada">Canada</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p id="quest"><b>Gender</b></p>
+                    <label for="">
+                        <input type="radio" name="gender" value="male" class="inputradio" checked> Male
+                    </label> 
+                    <label for="">
+                        <input type="radio" name="gender" value="female" class="inputradio" checked> Female
+                    </label>
+                    <label for="">
+                        <input type="radio" name="gender" value="other" class="inputradio" checked> Other
+                    </label>
+                </div> 
+                <div class="form-group">
+                    <p id="quest"><b>Profession</b></p>
+                    <label for="">
+                        <input type="checkbox" name="Prefer" value="Student" class="inputcheckbox" checked>Student
+                    </label> 
+                    <label for="">
+                        <input type="checkbox" name="Prefer" value="Teacher" class="inputcheckbox" checked> Teacher
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="Prefer" value="Bank Employee" class="inputcheckbox" checked> Bank Employee
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="Prefer" value="Other" class="inputcheckbox" checked> Other
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p id="quest"><b>Is this first time you are Using our Products?</b></p>
+                    <label for="">
+                        <input type="radio" name="product" value="Yes" class="inputradio" checked> Yes
+                    </label> 
+                    <label for="">
+                        <input type="radio" name="product" value="No" class="inputradio" checked> No
+                    </label>
+                </div> 
+                <div class="form-group">
+                    <p id="quest"><b>Would You Suggest to Your Friends and Colleagues?</b></p>
+                    <label for="">
+                        <input type="radio" name="suggest" value="Yes" class="inputradio" checked> Yes
+                    </label> 
+                    <label for="">
+                        <input type="radio" name="suggest" value="No" class="inputradio" checked> No
+                    </label>
+                </div> 
+                <div class="form-group">
+                    <p id="quest"><b>How Satisfied you are with our Company ?</b></p>
+                    <label for="">
+                        <input type="radio" name="Satisfy" value="Satisfied" class="inputradio" checked> Satisfied
+                    </label> 
+                    <label for="">
+                        <input type="radio" name="Satisfy" value="Neutral" class="inputradio" checked> Neutral
+                    </label>
+                    <label for="">
+                        <input type="radio" name="Satisfy" value="UnSatisfied" class="inputradio" checked> UnSatisfied
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p id="quest"><b>Give us Your Valuable Feedback?</b></p>   
+                    <textarea name="feedback" id="feedback" cols="30" rows="5" class="textarea" placeholder="Enter Your feedback here...."></textarea> 
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="btn">Submit</button>
+                    <button type="Reset" id="Reset" class="btn">Reset</button>
+                </div>  
+            </form>
+        </div>
+    </body>
+</html>
